@@ -27,11 +27,15 @@
     -->
     <form id="form4" method="POST">
       <label for="rua">Rua </label>
-      <input type="text" name="rua" id="rua" max="100" required><br><br>
+      <input type="text" name="rua" id="rua" maxlength="100" required><br><br>
       <label for="numero">Numero </label>
       <input type="number" name="numero" id="numero" required><br><br>
-      <select name="estado" id="estado">
+      <label for="estado">Estado </label>
+      <select name="estado" id="estado" required>
         <option value=""></option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MG">Minas Gerais</option>
       </select><br><br>
       <input type="submit" value="Salvar"> 
       <input type="reset" value="Limpar">
