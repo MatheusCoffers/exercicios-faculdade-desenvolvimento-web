@@ -25,6 +25,22 @@
      Use o nome de campo 'observacoes'
      -- Botão de Submissão: deve possuir o texto Pedir.
     -->
-    <form id="form5"></form>
+    <form id="form5" method="POST">
+
+      Produto <select name="produto" id="produto" required>
+        <option value=""></option>
+        <option value="Pizza">Pizza</option>
+        <option value="RJ">Yakissoba</option>
+        <option value="Feijoada">Feijoada</option>
+      </select><br><br>
+
+      <label for="quantidade">Quantidade </label>
+      <input type="number" name="quantidade" id="quantidade" required max="8" min="1" value="1"><br><br>
+
+      <label for="observacoes">Observação</label><br>
+      <textarea name="observacoes" id="observacoes" cols="30" rows="10" maxlength="255">Por favor, escreva aqui suas observações!</textarea><br><br>
+
+      <input type="submit" value="Pedir">
+    </form>
 </body>
 </html>
